@@ -5,8 +5,10 @@
   "description": "# <h2> This is going to be a part of my e-commerce project",
   "main": "index.js",
   "scripts": {
+    "build": "cd frontend && npm install && npm run build",
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
   },
+
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -18,9 +20,12 @@
     "mongoose": "^5.13.3",
     "multer": "^1.4.3"
   },
+
   "devDependencies": {
     "eslint": "^7.31.0",
     "eslint-plugin-react": "^7.24.0",
     "nodemon": "^2.0.12"
-  }
+  },
+  
+  "engines" : {"node": "12.4.0", "npm": "6.9.0"}
 }
